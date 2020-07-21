@@ -15,4 +15,8 @@ public class CicdPipelineApplication {
 		SpringApplication.run(CicdPipelineApplication.class, args);
 	}
 
+	public static Logger getLog() {
+		return log;
+	}
+
 }
