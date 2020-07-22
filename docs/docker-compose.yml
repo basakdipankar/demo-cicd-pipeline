@@ -1,0 +1,15 @@
+version: '3'
+services:
+  webapp:
+    image: "dipankar435/war-test:1.0"
+    ports:
+      - "8080:8080"
+  db:
+    image: "mysql"
+    ports:
+      - "3306:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=password
+      - MYSQL_USER=admin
+      - MYSQL_PASSWORD=password
+      - MYSQL_DATABASE=testdb
