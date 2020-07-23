@@ -8,4 +8,4 @@ COPY ${JAR_FILE} springboot_app.jar
 
 MAINTAINER "dbasak2013@gmail.com"
 
-ENTRYPOINT ["java", "-jar", "springboot_app"]
+ENTRYPOINT ["java", "-jar", "springboot_app.jar"]
